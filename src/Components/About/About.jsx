@@ -12,7 +12,7 @@ function About() {
                 <div className='about-me '>
                     <div className="row">
                         <div className="col-lg-6 col-md-12 col-sm-13">
-                            <div className='p-4'>
+                            <div className='py-4'>
                                 <h3>About Me</h3>
                                 <h1>Crafting Effective Solutions for Digital Challenges in <span>Web Development</span> </h1>
                                 <p>Passionate web developer with a keen eye for detail. Transforming ideas into captivating digital experiences. Let's create something extraordinary together.</p>

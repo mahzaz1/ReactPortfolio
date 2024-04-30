@@ -214,6 +214,7 @@ nav {
 .introduction-section {
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
+  padding-bottom: 50px;
 }
 
 @keyframes fadeIn {
@@ -227,7 +228,7 @@ nav {
 }
 
 .introduction-section h1 {
-  color: #E60023 !important;
+  color: #28B463  !important;
   font-size: 50px;
   display: inline-block;
   position: relative;
@@ -282,11 +283,12 @@ nav {
 }
 
 .hireme-btn {
-  margin-top: 75px !important;
+  margin-top: 75px ;
 }
 
 .introduction-section .hireme-btn button {
-  background: #E60023;
+  background: #28B463 ;
+  color: #FFF;
   padding: 1px 45px 14px 45px;
   font-size: 16px;
   padding-top: 10px;
@@ -325,7 +327,7 @@ nav {
 }
 
 .experience-section h2 {
-  color: #E60023;
+  color: #28B463 ;
   font-size: 55px;
   font-weight: 500;
 
@@ -392,7 +394,7 @@ nav {
 }
 
 .about-me span {
-  color: #E60023 !important;
+  color: #28B463  !important;
 }
 
 .about-me p {
@@ -416,7 +418,7 @@ nav {
 }
 
 .contacts span {
-  background-color: #E60023 !important;
+  background-color: #28B463  !important;
   font-size: 40px;
   color: #070707 !important;
 }
@@ -467,7 +469,7 @@ nav {
 }
 
 .info-box-item .icon {
-  background-color: #E60023;
+  background-color: #28B463 ;
   padding: 6px 12px;
   border-radius: 50%;
   font-size: 25px;
@@ -514,7 +516,7 @@ nav {
 }
 
 .services-main span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .detail-btn-div {
@@ -536,7 +538,7 @@ nav {
 }
 
 .details-btn:hover {
-  background: #E60023;
+  background: #28B463 ;
   color: #070707;
 }
 
@@ -552,7 +554,7 @@ nav {
 }
 
 .services-detail:hover {
-  border: 1px solid #E60023;
+  border: 1px solid #28B463 ;
 }
 
 .services-detail span {
@@ -570,7 +572,7 @@ nav {
 }
 
 .services-detail:hover .details-btn {
-  background-color: #E60023;
+  background-color: #28B463 ;
   color: #070707;
 
 }
@@ -595,7 +597,7 @@ nav {
 }
 
 .skill-wrapper h1 {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .skill-wrapper p {
@@ -608,7 +610,7 @@ nav {
 }
 
 .skill-wrapper span {
-  color: #E60023 !important;
+  color: #28B463  !important;
 }
 
 .skill-wrapper :nth-child(3) img {
@@ -655,7 +657,7 @@ nav {
 }
 
 .language-section:hover {
-  border: 1px solid #E60023;
+  border: 1px solid #28B463 ;
 }
 
 .language-section {
@@ -680,7 +682,7 @@ nav {
 }
 
 .language-section:hover button {
-  background-color: #E60023;
+  background-color: #28B463 ;
   color: #070707;
 }
 
@@ -706,7 +708,7 @@ nav {
 }
 
 .product-item h4 {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .product-item p {
@@ -728,7 +730,7 @@ nav {
 }
 
 .client-testimonial h1 span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .product-item {
@@ -743,7 +745,7 @@ nav {
 }
 
 .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
-  background-color: #E60023;
+  background-color: #28B463 ;
 }
 
 .p-carousel-indicators {
@@ -763,13 +765,13 @@ nav {
 }
 
 .p-carousel-prev:hover {
-  background-color: #E60023 !important;
+  background-color: #28B463  !important;
   border-radius: 10px !important;
 
 }
 
 .p-carousel-next:hover {
-  background-color: #E60023 !important;
+  background-color: #28B463  !important;
   border-radius: 10px !important;
 
 }
@@ -802,7 +804,7 @@ nav {
 }
 
 .project-info-box span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .project-section-wrapper h6 {
@@ -821,7 +823,7 @@ nav {
 }
 
 .project-section-wrapper span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .project-details {
@@ -832,7 +834,7 @@ nav {
 }
 
 .project-details h5 {
-  color: #E60023;
+  color: #28B463 ;
   margin-bottom: 20px !important;
 }
 
@@ -844,7 +846,7 @@ nav {
 }
 
 .project-details h1:hover {
-  color: #E60023;
+  color: #28B463 ;
   text-align: start !important;
 }
 
@@ -870,7 +872,7 @@ nav {
 }
 
 .price-wrapper span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .pricing-detail p {
@@ -904,7 +906,7 @@ nav {
 }
 
 .pricing-detail h2 {
-  color: #E60023 !important;
+  color: #28B463  !important;
   margin-top: 30px;
 }
 
@@ -945,7 +947,7 @@ nav {
 }
 
 .pricing-container:hover button {
-  background-color: #E60023 !important;
+  background-color: #28B463  !important;
   color: #070707;
 
 }
@@ -961,7 +963,7 @@ nav {
 }
 
 .form-alert-pra {
-  color: #E60023;
+  color: #28B463 ;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -977,7 +979,7 @@ nav {
 }
 
 .contact-form-detail h2 {
-  color: #E60023;
+  color: #28B463 ;
   font-size: 45px;
 }
 
@@ -993,7 +995,7 @@ nav {
 .experience-detail span {
   color: #070707;
   text-align: center;
-  background-color: #E60023;
+  background-color: #28B463 ;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -1075,7 +1077,7 @@ label {
   text-align: center;
   align-items: center;
   position: relative;
-  background: #E60023;
+  background: #28B463 ;
   color: #070707;
   padding: 13px 45px;
   border: none;
@@ -1103,12 +1105,12 @@ label {
 .input-with-icon input:focus {
   background: #070707;
   color: #fff;
-  border: 1px solid #E60023;
+  border: 1px solid #28B463 ;
 }
 
 .contact-form textarea:focus {
   background: #070707;
-  border: 1px solid #E60023;
+  border: 1px solid #28B463 ;
 }
 
 
@@ -1125,6 +1127,9 @@ label {
 .footer-section-wrapper {
 padding:40px 10px 40px;
 }
+.footer-section-wrapper img{
+  width: 75%;
+}
 
 .quick-link h5 {
   color: #FFF;
@@ -1138,7 +1143,7 @@ padding:40px 10px 40px;
 
 .quick-link ul li {
   list-style: none;
-  color: #E60023;
+  color: #28B463 ;
   margin-top: 20px !important;
   font-size: 18px;
   cursor: pointer;
@@ -1149,7 +1154,7 @@ padding:40px 10px 40px;
 }
 
 .footer-contact span {
-  color: #E60023;
+  color: #28B463 ;
   font-size: 26px !important;
   margin-bottom: 30px;
 }
@@ -1169,7 +1174,7 @@ padding:40px 10px 40px;
 }
 
 .copyright-section span {
-  color: #E60023;
+  color: #28B463 ;
 }
 
 .footer-bottom .copyright-text {
@@ -1177,7 +1182,7 @@ padding:40px 10px 40px;
 }
 
 .copyright-text span {
-  color: #E60023 !important;
+  color: #28B463  !important;
 }
 
 .footer-bottom .scroll-top {
@@ -1234,7 +1239,7 @@ ul {
   cursor: pointer;
   line-height: 40px;
   border-radius: 5px;
-  background: #E60023;
+  background: #28B463 ;
   animation: pluse 2s infinite !important;
 }
 
@@ -1286,6 +1291,7 @@ ul {
 
   .profile-image img {
     margin: 0px !important;
+    display: none;
   }
 
   .Animation-text-wrapper {
@@ -1467,7 +1473,19 @@ ul {
 .footer-section-wrapper {
   padding:40px 10px 40px;
   }
-  
+  .introduction-section .hireme-btn button{
+    padding: 10px 20px;
+  }
+  .hireme-btn{
+    margin-top: 20px;
+  }
+  .quick-link{
+    display: none;
+  }
+  .footer-contact{
+    margin-top: 20px;
+    
+  }
 
   /* .social-handle ul {
     display: flex;

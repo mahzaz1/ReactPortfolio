@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { MdNavigateNext } from "react-icons/md";
-import resumePDF from '/assets/img/resume.pdf';
+import resumePDF from '/assets/img/ezaz.pdf';
 
 function Main() {
     const [text, setText] = useState('');
@@ -21,7 +21,7 @@ function Main() {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = resumePDF;
-        link.download = 'resume.pdf';
+        link.download = 'ezaz.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -33,7 +33,7 @@ function Main() {
                 <section className='introduction-section'>
                     <div className='row'>
                         <div className="col-lg-6 col-sm-12 col-md-12">
-                            <div className='mt-5 pt-5'>
+                            <div className=''>
                                 <h3 className='animated-text'>Hello 👋 I'm</h3>
                                 <div className='typewriter'>
                                     <h1>{text}</h1>
@@ -60,7 +60,7 @@ function Main() {
 
                                 <div className="d-flex hireme-btn">
                                     <div className="p-2">
-                                        <button>Hire me</button>
+                                        <button >Hire me</button>
                                     </div>
                                     <div className="p-2 ">
                                         <button className='resume-btn' onClick={handleDownload}>
@@ -78,7 +78,7 @@ function Main() {
                         </div>
                         <div className="col-lg-6 col-sm-12 col-md-6">
                             <div className='profile-image'>
-                                <img src="/assets/img/coder.png" alt="" />
+                                <img src="/assets/img/banner.gif" alt="" />
                             </div>
 
                         </div>

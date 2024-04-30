@@ -39,7 +39,7 @@ function Home() {
             <section className='price-section' id='pricing'>
                 <Pricing />
             </section>
-            <section className='contact-form-section'>
+            <section className='contact-form-section' id='contact'>
                 <Contactform />
             </section>
             <section className='footer-section'>
