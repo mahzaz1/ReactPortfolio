@@ -4,7 +4,6 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -13,7 +12,6 @@ import {
 } from './components';
 import { useEffect } from 'react';
 import { config } from './constants/config';
-import ContactDetails from './components/sections/ContactDetails';
 
 const App = () => {
   useEffect(() => {
