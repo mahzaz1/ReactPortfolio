@@ -84,7 +84,7 @@ const Contact = () => {
           name="Ezaz Naseer"
           phone="+92 3409086301"
           email="malikahzaz301@gmail.com"
-          address="G-13 Islamabad, Pakistan"
+          address="6th Road, Rawalpindi, Punjab, Pakistan"
           socialMediaLinks={socialMediaLinks}
         />
       </motion.div>

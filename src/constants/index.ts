@@ -28,12 +28,15 @@ import {
   orixesTech,
   lalagroup,
   codeCue,
-
   threejs,
   hajjharamain,
   wilmart,
   domains,
   tripplanerpk,
+  wilsonsCommunity,
+  ezazbot,
+  chatty,
+  express,
 } from '../assets';
 
 export const navLinks: TNavLink[] = [
@@ -46,6 +49,10 @@ export const navLinks: TNavLink[] = [
     title: 'Work',
   },
   {
+    id: 'projects',
+    title: 'Projects',
+  },
+  {
     id: 'contact',
     title: 'Contact',
   },
@@ -53,7 +60,7 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: 'Web Developer',
+    title: 'React/Next.js Developer',
     icon: web,
   },
   {
@@ -127,7 +134,7 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     companyName: 'CodeCue Solution',
     icon: codeCue, // Replace with the appropriate icon reference
     iconBg: '#f4f4f4', // You can adjust the background color if needed
@@ -145,7 +152,7 @@ const experiences: TExperience[] = [
     companyName: 'Orixes Tech',
     icon: orixesTech, // Replace with the appropriate icon reference
     iconBg: '#E6DEDD', // Adjust the background color if needed
-    date: 'May 2023 - December 2023',
+    date: 'May 2023 - December 2024',
     points: [
       'Developed and maintained React.js applications with a focus on performance and scalability.',
       'Worked remotely, collaborating with backend teams to integrate APIs seamlessly into React projects.',
@@ -155,7 +162,7 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'React.js/Next.js Developer',
+    title: 'React.js Developer',
     companyName: 'Lala Group of Companies',
     icon: lalagroup,
     iconBg: '#fff',
@@ -168,13 +175,13 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'Full Stack (React with Firebase) Developer',
+    title: 'Full Stack Developer (MERN/Firebase)',
     companyName: 'Redstar Technologies',
     icon: redstar, // Replace with the appropriate icon reference
     iconBg: '#E6DEDD', // Adjust the background color if needed
     date: 'November 18, 2023 - Present',
     points: [
-      'Developing and maintaining full-stack web applications using React.js, Firebase, TypeScript, Next.js, and Tailwind CSS.',
+      'Developing and maintaining full-stack web applications using React.js, Firebase, TypeScript, Next.js, Tailwind CSS, and the MERN stack (MongoDB, Express.js, React, Node.js).',
       'Collaborating with backend teams to integrate Firebase services, including authentication, Firestore, and Cloud Functions.',
       'Building and optimizing reusable components and libraries using TypeScript and React.',
       'Ensuring cross-browser compatibility and mobile responsiveness across various devices.',
@@ -211,82 +218,6 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: 'Wilmart',
-    description:
-      'E-commerce website for selling pharmacy products, providing an easy and convenient way for users to browse and purchase pharmaceutical items online.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'javascript',
-        color: 'purple-text-gradient',
-      },
-      {
-        name: 'php',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'bootstrap',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: wilmart,  // Replace with the appropriate image reference
-    sourceCodeLink: 'https://www.wilmart.pk/',  // Replace with the actual source code link
-  },
-  {
-    name: 'Hajj Haramain',
-    description:
-      'Online booking platform that allows users to book their Hajj pilgrimage, view available packages, and get details on travel arrangements, accommodations, and other services related to Hajj.',
-    tags: [
-      {
-        name: 'typescript',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nextjs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'php',
-        color: 'pink-text-gradient',
-      },
-      {
-        name: 'bootstrap',
-        color: 'purple-text-gradient',
-      },
-     
-    ],
-    image: hajjharamain, // Add your image variable here
-    sourceCodeLink: 'https://hajjharamain.com/', // Update with the actual source code link
-  },
-  {
-    name: '3ns Domains',
-    description:
-      'A platform for buying Web3 domains, Air-trained domains, and managing personalized links, including a Linktree-like feature, to create a unique digital identity.',
-    tags: [
-      {
-        name: 'typescript',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'nextjs',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'firebase',
-        color: 'orange-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'purple-text-gradient',
-      },
-    ],
-    image: domains, // Add your image variable here
-    sourceCodeLink: 'https://3ns.domains/', // Provide the live link
-  },
-  {
     name: 'Tripplanner PK',
     description:
       'A global online booking platform that allows users to book tours, visas, transport, and other travel services worldwide, offering an easy and convenient way to plan and book trips.',
@@ -310,8 +241,205 @@ const projects: TProject[] = [
     ],
     image: tripplanerpk, // Add your image variable here
     sourceCodeLink: 'https://www.tripplannerpk.com/', // Provide the live link
-  }
-  
+  },
+  {
+    name: 'Hajj Haramain',
+    description:
+      'Online booking platform that allows users to book their Hajj pilgrimage, view available packages, and get details on travel arrangements, accommodations, and other services related to Hajj.',
+    tags: [
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'php',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'purple-text-gradient',
+      },
+    ],
+    image: hajjharamain, // Add your image variable here
+    sourceCodeLink: 'https://hajjharamain.com/', // Update with the actual source code link
+  },
+
+  {
+    name: 'Wilmart',
+    description:
+      'E-commerce website for selling pharmacy products, providing an easy and convenient way for users to browse and purchase pharmaceutical items online.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'purple-text-gradient',
+      },
+      {
+        name: 'php',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: wilmart, // Replace with the appropriate image reference
+    sourceCodeLink: 'https://www.wilmart.pk/', // Replace with the actual source code link
+  },
+
+  {
+    name: 'Wilsons Patient Community',
+    description:
+      'Wilson’s Patient Community is an online platform that connects patients with a global network of medical professionals across all specialties. Doctors collaborate to provide expert opinions, second opinions, and health insights, creating a trusted space for medical advice and community support.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'purple-text-gradient',
+      },
+      {
+        name: 'php',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: wilsonsCommunity, // Add your image variable here
+    sourceCodeLink: 'https://www.wilsonspatientcommunity.com/', // Provide the live link
+  },
+  {
+    name: 'Express Group Of Companies',
+    description:
+      'Express Group Of Companies is a packaging company website built to showcase their company profile, allow users to select custom box sizes, and place order requests.',
+
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'purple-text-gradient',
+      },
+      {
+        name: 'php',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: express, // Add your image variable here
+    sourceCodeLink: 'https://v1.theexpresspackages.com/', // Provide the live link
+  },
+
+  {
+    name: 'AI-Chatbot',
+    description:
+      'This is an AI chatbot built using the Google Gemini API, integrated with my personal data and developed using React. It provides intelligent, context-aware responses based on the information provided.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'purple-text-gradient',
+      },
+      {
+        name: 'tawilwind',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'google gemini api',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'ai chatbot',
+        color: 'yellow-text-gradient',
+      },
+    ],
+    image: ezazbot, // Add your image variable here
+    sourceCodeLink: 'https://ezazbot.vercel.app/', // Provide the live link
+  },
+  {
+    name: 'Chatty',
+    description:
+      'This is a one-to-one chat application built using the MERN stack (MongoDB, Express.js, React, Node.js) and Socket.IO for real-time communication. It supports intelligent, context-aware messaging with data persistence and live interaction capabilities.',
+
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'purple-text-gradient',
+      },
+      {
+        name: 'tawilwind',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'node.js',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'yellow-text-gradient',
+      },
+      {
+        name: 'socket.io',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: chatty, // Add your image variable here
+    sourceCodeLink: 'https://chattyy-five.vercel.app/', // Provide the live link
+  },
+    {
+    name: '3ns Domains',
+    description:
+      'A platform for buying Web3 domains, Air-trained domains, and managing personalized links, including a Linktree-like feature, to create a unique digital identity.',
+    tags: [
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'nextjs',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'firebase',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'purple-text-gradient',
+      },
+        {
+        name: 'bloackchain',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: domains, // Add your image variable here
+    sourceCodeLink: 'https://3ns.domains/', // Provide the live link
+  },
+
+
 ];
 
 export { services, technologies, experiences, testimonials, projects };

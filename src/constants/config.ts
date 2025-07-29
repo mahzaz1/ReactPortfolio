@@ -67,7 +67,11 @@ export const config: TConfig = {
     about: {
       p: 'Introduction',
       h2: 'Overview.',
-      content: `I'm an experienced software developer with a strong background in TypeScript and JavaScript, and expertise in frameworks such as React, Node.js, and Next.js. I’m a fast learner and work closely with clients to deliver efficient, scalable, and user-friendly solutions that address real-world challenges. Let’s collaborate to bring your ideas to life!`,
+      content: `I'm skilled in building responsive React and Next.js applications using HTML, CSS, and JavaScript. Familiar with SSR,
+SSG, and dynamic routing in Next.js, along with API routes and performance optimization. Familiar with the MERN
+stack, with hands-on practice creating full-stack projects like a blog app and a chat app. Experienced with CI/CD
+workflows and applying Agile methodology to deliver iterative, collaborative, and high-quality software.
+`,
     },
     experience: {
       p: 'What I have done so far',
