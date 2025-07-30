@@ -20,7 +20,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt glareEnable tiltEnable tiltMaxAngleX={30} tiltMaxAngleY={30} glareColor="#aaa6c3">
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[550px]">
+        <div  onClick={() => window.open(sourceCodeLink, '_blank')} className="bg-tertiary w-full rounded-2xl p-5 sm:w-[550px]">
           <div className="relative h-[230px] w-full">
             <img src={image} alt={name} className="h-full w-full rounded-2xl object-cover" />
             <div className="card-img_hover absolute inset-0 m-3 flex justify-end">
