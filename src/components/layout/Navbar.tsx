@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
-import { styles } from "../../constants/styles";
-import { navLinks } from "../../constants";
-import { logo, menu, close } from "../../assets";
-import { config } from "../../constants/config";
+import { styles } from '../../constants/styles';
+import { navLinks } from '../../constants';
+import { logo, menu, close } from '../../assets';
+import { config } from '../../constants/config';
 
 const Navbar = () => {
   const [active, setActive] = useState<string | null>();
@@ -18,21 +18,20 @@ const Navbar = () => {
         setScrolled(true);
       } else {
         setScrolled(false);
-        setActive("");
+        setActive('');
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
     const navbarHighlighter = () => {
-      const sections = document.querySelectorAll("section[id]");
+      const sections = document.querySelectorAll('section[id]');
 
-      sections.forEach((current) => {
-        const sectionId = current.getAttribute("id");
+      sections.forEach(current => {
+        const sectionId = current.getAttribute('id');
         // @ts-ignore
         const sectionHeight = current.offsetHeight;
-        const sectionTop =
-          current.getBoundingClientRect().top - sectionHeight * 0.2;
+        const sectionTop = current.getBoundingClientRect().top - sectionHeight * 0.2;
 
         if (sectionTop < 0 && sectionTop + sectionHeight > 0) {
           setActive(sectionId);
@@ -40,20 +39,27 @@ const Navbar = () => {
       });
     };
 
-    window.addEventListener("scroll", navbarHighlighter);
+    window.addEventListener('scroll', navbarHighlighter);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("scroll", navbarHighlighter);
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', navbarHighlighter);
     };
   }, []);
 
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/Web Developer - Ezaz Naseer.pdf';
+    link.download = 'Web Developer - Ezaz Naseer.pdf'; // Optional: rename the file on download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${
+        scrolled ? 'bg-primary' : 'bg-transparent'
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
@@ -70,18 +76,26 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
-          {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.id ? "text-white" : "text-secondary"
-              } cursor-pointer text-[18px] font-medium hover:text-white`}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-row items-center gap-10 ">
+          <ul className="hidden list-none flex-row gap-10 sm:flex">
+            {navLinks.map(nav => (
+              <li
+                key={nav.id}
+                className={`${
+                  active === nav.id ? 'text-white' : 'text-secondary'
+                } cursor-pointer text-[18px] font-medium hover:text-white`}
+              >
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
+            ))}
+          </ul>
+          <button
+            onClick={handleDownload}
+            className="hidden sm:block px-6 py-3 rounded-full border border-transparent hover:bg-transparent hover:border-[#915EFF] font-medium text-white text-xs sm:text-base transition-transform  duration-200 bg-[#915EFF] active:scale-95 shadow-[0_0_10px_#915EFF] hover:shadow-[0_0_15px_#915EFF]"
+          >
+            Get My Resume
+          </button>
+        </div>
 
         <div className="flex flex-1 items-center justify-end sm:hidden">
           <img
@@ -93,15 +107,15 @@ const Navbar = () => {
 
           <div
             className={`${
-              !toggle ? "hidden" : "flex"
+              !toggle ? 'hidden' : 'flex'
             } black-gradient absolute right-0 top-20 z-10 mx-4 my-2 min-w-[140px] rounded-xl p-6`}
           >
             <ul className="flex flex-1 list-none flex-col items-start justify-end gap-4">
-              {navLinks.map((nav) => (
+              {navLinks.map(nav => (
                 <li
                   key={nav.id}
                   className={`font-poppins cursor-pointer text-[16px] font-medium ${
-                    active === nav.id ? "text-white" : "text-secondary"
+                    active === nav.id ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
