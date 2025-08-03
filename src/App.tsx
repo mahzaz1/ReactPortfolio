@@ -1,4 +1,4 @@
-// Commit for git activity
+// Just for git activity
 import { BrowserRouter } from 'react-router-dom';
 
 import {
